@@ -12,11 +12,11 @@
 #         Author:  Ovidiu - Dan Bogat [ic17b501], ic17b501@technikum-wien.at
 # =====================================================================================
 
-BIN=hello
-SOURCES=hello.cs
+BIN=task2
+SOURCES=students.cs task2.cs
 
 all: $(SOURCES)
-	@mcs -out:$(BIN) hello.cs && echo "Sauce compiled!"
+	@mcs -out:$(BIN) $(SOURCES) && echo "Sauce compiled!"
 
 clean:
 	@-rm -rf $(BIN) && echo "Folder cleansed!"
