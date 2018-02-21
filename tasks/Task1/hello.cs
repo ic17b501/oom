@@ -3,7 +3,7 @@
  *
  *       Filename:  hello.cs
  *
- *    Description:  
+ *    Description:  Simple hello world with mono / mcs
  *
  *        Version:  1.0
  *        Created:  02/21/2018 04:17:17 PM
