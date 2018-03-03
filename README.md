@@ -1,3 +1,8 @@
+# 
+Zu T2.1 -> eigene branch Task2 mit eigenem Folder Task2
+Zu T2.2 -> Datei 'tasks/Task2/students.cs' hat 2 Konstruktoren
+Zu T2.2 ->  
+
 # Objektorientierte Methoden (OOM)
   Object-Oriented Design (OOD) and Programming (OOP)
 
