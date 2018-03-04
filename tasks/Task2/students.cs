@@ -11,8 +11,8 @@ namespace Students
 	private DateTime   birthday;
 	private DateTime   created;
 	private double gold;
-	public double ects; //todo
-	public string email; //todo
+	public string email;
+	public bool humor;
 	
 	public Student()
 	{
@@ -24,7 +24,9 @@ namespace Students
 		       string lastName,
 		       string matNumber,
 		       string telNumber,
-		       double gold
+		       double gold,
+		       bool humor=false,
+		       string mail="<none>"
 		       )
 	{
 	    this.setFirstName(firstName);
@@ -32,6 +34,8 @@ namespace Students
 	    this.setMatNumber(matNumber);
 	    this.setTelNumber(telNumber);
 	    this.setGold(gold);
+	    this.setEmail(mail);
+	    this.humor=humor;
 	}
 
 	private void initEmpty()
@@ -40,6 +44,7 @@ namespace Students
 	    this.setLastName("");
 	    this.setMatNumber("");
 	    this.setTelNumber("");		
+	    this.setEmail("<none>");
 	    this.birthday = DateTime.Now;
 	    this.created = DateTime.Now;
 	    this.gold = 0;
@@ -92,8 +97,10 @@ namespace Students
 	    Console.WriteLine(" Last Name: " + this.lastName);
 	    Console.WriteLine(" matNumber: " + this.matNumber);
 	    Console.WriteLine(" telNumber: " + this.telNumber);
+	    Console.WriteLine("     email: " + this.email);
 	    Console.WriteLine("  birthday: " + this.birthday);
 	    Console.WriteLine("   created: " + this.created);
+	    Console.WriteLine("     humor: " + this.hasHumor());
 	    Console.WriteLine("      gold: " + this.gold);
 	    Console.WriteLine("<<-----Student record end------>>");
 	}
@@ -115,6 +122,26 @@ namespace Students
 		{
 		    return this.gold;
 		}
+	}
+
+	public void setEmail(string mail)
+	{
+	    this.email = mail;
+	}
+	
+	public string getEmail()
+	{
+	    return this.email;
+	}
+	
+	public bool hasHumor()
+	{
+	    return this.humor;
+	}
+
+	public void setHumor(bool humor)
+	{
+	    this.humor = humor;
 	}
 
     }

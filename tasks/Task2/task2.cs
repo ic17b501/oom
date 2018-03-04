@@ -24,15 +24,25 @@ public class Task2
 			  )
 	      );
 
+	
+
 	for(int i=1;i<6;++i)
 	    {
 		s.Add(new Student(names[i-1,0],
 				  names[i-1,1],
 				  "x"+rnd.Next(0, 1000000).ToString("D7"),
 				  "x"+rnd.Next(0, 1000000).ToString("D7"),
-				  Math.Round(rnd.NextDouble()*100,2)
+				  Math.Round(rnd.NextDouble()*100,2),
+				  rnd.Next(100) <= 20 ? true : false
 				  )
 		      );
+	    }
+
+	Student king = findStudentByName(s,"John Silver");
+	if(king != null)
+	    {
+		king.setEmail("king@kong.tld");
+		king.setHumor(true);
 	    }
 
 
@@ -40,9 +50,9 @@ public class Task2
 	Console.WriteLine("");
 	listGold(s);
 
-	Student king = findStudentByName(s,"John Silver");
 	if(king != null)
 	    {
+		king.setEmail("king@kong.tld");
 		Console.Write("King's gold: " + king.Gold.ToString("0.00") + " -> ");		
 		king.updateGold(king.Gold * 1000);
 		Console.WriteLine(" king's gold after adjustment: " + king.Gold.ToString("0.00"));
