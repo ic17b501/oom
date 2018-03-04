@@ -1,19 +1,12 @@
 # informationen zur Abgabe 
-  *Zu **T2.1** -> **eigene branch** Task2 mit eigenem Folder Task2
-
-  *Zu **T2.2** -> Datei 'tasks/Task2/students.cs' hat **2 Konstruktoren**
-
-  *Zu **T2.2** -> Student hat 2 Public properties, string email und public humor mit jeweils einee public set/get Methode
-
-  *Zu **T2.2** -> Student.'gold' ist ein private field mit der public getter metoder fuer 'Gold', public updateGold und private setGold
-
-  *Zu **T2.3** -> task2.cs instatiier 6 unterschiedliche Objecte von Student und ladet diese in eine Liste List<Student> s;
-
-  *Zu **T2.3** -> listStudents(List<Student>) iteriert ueber alle Elemente der Liste s, und fuehrt fuer jedes Objekt die Methode print() aus. Die instantiierung wird absichtlich auf unterschiedliche Weisen vorgenommen.
-
-  *Zu **T2.3** -> die Methode public print() gibt ausgewaehlte fields und properties des objektes aus mittels Console.WriteLine()
-
-  *Zu **T2.3** -> die Methode findStudentByName(List<Student>, String) aus task2.cs findet ein bestimtes Objekt aus der Liste, bei dem gefundenen Objekt werden setter / getter Methoden aufgerufen um fields auszulesen, bzw. eines zu aktualisieren,(updateGold). Das betroffene field des Objektes wird vorher und nachher aufgerufen.
+  * Zu **T2.1** -> **eigene branch** Task2 mit eigenem Folder Task2
+  * Zu **T2.2** -> Datei 'tasks/Task2/students.cs' hat **2 Konstruktoren**
+  * Zu **T2.2** -> Student hat 2 Public properties, string email und public humor mit jeweils einee public set/get Methode
+  * Zu **T2.2** -> Student.'gold' ist ein private field mit der public getter metoder fuer 'Gold', public updateGold und private setGold
+  * Zu **T2.3** -> task2.cs instatiier 6 unterschiedliche Objecte von Student und ladet diese in eine Liste List<Student> s;
+  * Zu **T2.3** -> listStudents(List<Student>) iteriert ueber alle Elemente der Liste s, und fuehrt fuer jedes Objekt die Methode print() aus. Die instantiierung wird absichtlich auf unterschiedliche Weisen vorgenommen.
+  * Zu **T2.3** -> die Methode public print() gibt ausgewaehlte fields und properties des objektes aus mittels Console.WriteLine()
+  * Zu **T2.3** -> die Methode findStudentByName(List<Student>, String) aus task2.cs findet ein bestimtes Objekt aus der Liste, bei dem gefundenen Objekt werden setter / getter Methoden aufgerufen um fields auszulesen, bzw. eines zu aktualisieren,(updateGold). Das betroffene field des Objektes wird vorher und nachher aufgerufen.
 
 
 Die meisten Werte fuer die Objekte werden zufaellig generiert.
