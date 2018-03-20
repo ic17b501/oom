@@ -25,11 +25,11 @@ namespace Students
 	private string lastName;
 	private string matNumber;
 	private string telNumber;
-	private DateTime   birthday;
-	private DateTime   created;
+	private DateTime birthday;
+	private DateTime created;
 	private double gold;
-	public string email;
-	public bool humor;
+	private string email;
+	private bool humor;
 	
 	public Student()
 	{
@@ -46,67 +46,87 @@ namespace Students
 		       string mail="<none>"
 		       )
 	{
-	    this.setFirstName(firstName);
-	    this.setLastName(lastName);
-	    this.setMatNumber(matNumber);
-	    this.setTelNumber(telNumber);
-	    this.setGold(gold);
-	    this.setEmail(mail);
-	    this.humor=humor;
+	    this.firstName = firstName;
+	    this.lastName = lastName;
+	    this.matNumber = matNumber;
+	    this.telNumber = telNumber;
+	    this.gold = gold;
+	    this.email = mail;
+	    this.humor = humor;
 	}
 
 	private void initEmpty()
 	{
-	    this.setFirstName("");
-	    this.setLastName("");
-	    this.setMatNumber("");
-	    this.setTelNumber("");		
-	    this.setEmail("<none>");
+	    this.firstName = "";
+	    this.lastName = "";
+	    this.matNumber = "";
+	    this.telNumber = "";
+	    this.email = "<none>";
+	    this.humor = false;
 	    this.birthday = DateTime.Now;
 	    this.created = DateTime.Now;
 	    this.gold = 0;
 	}
-	    
-	private void setFirstName(string firstName)
+
+	public string FirstName
 	{
-	    this.firstName = firstName;
+	    get {return this.firstName;}
+	    set {this.firstName = value;}
 	}
 
-	public string getFirstName()
+	public string LasName
 	{
-	    return this.firstName;
+	    get {return this.lastName;}
+	    set {this.lastName = value;}
 	}
 
-	private void setLastName(string lastName)
+	public string FullName
 	{
-	    this.lastName = lastName;
+	    get {return this.firstName + " " + this.lastName;}
+	}
+	
+	public string MatriculationNumber
+	{
+	    get {return this.matNumber;}
+	    set {this.matNumber = value;}
 	}
 
-	public string getLastName()
+	public DateTime Immatriculated
 	{
-	    return this.lastName;
+	    get {return this.created;}
+	    set {this.created = value;}
 	}
 
-	private void setMatNumber(string matNumber)
+	public DateTime BirthDay
 	{
-	    this.matNumber = matNumber;
+	    get {return this.birthday;}
+	    set {this.birthday = value;}
+	}
+	
+	public string TelNumber
+	{
+	    get {return this.telNumber;}
+	    set {this.telNumber = value;}
 	}
 
-	public string getMatNumber()
+	public double Gold
 	{
-	    return this.matNumber;
+	    get	{return this.gold;}
+	    set {this.gold += value;}
 	}
 
-	private void setTelNumber(string telNumber)
+	public string Email
 	{
-	    this.telNumber = telNumber;
+	    get {return this.email;}
+	    set {this.email = value;}
 	}
-
-	public string getTelNumber()
+	
+	public bool Humor
 	{
-	    return this.telNumber;
+	    get {return this.humor;}
+	    set {this.humor = value;}
 	}
-
+	
 	public void print()
 	{
 	    Console.WriteLine("<<-----Student record start----->>");
@@ -117,49 +137,11 @@ namespace Students
 	    Console.WriteLine("     email: " + this.email);
 	    Console.WriteLine("  birthday: " + this.birthday);
 	    Console.WriteLine("   created: " + this.created);
-	    Console.WriteLine("     humor: " + this.hasHumor());
+	    Console.WriteLine("     humor: " + this.humor);
 	    Console.WriteLine("      gold: " + this.gold);
 	    Console.WriteLine("<<-----Student record end------>>");
 	}
 
-	private void setGold(double g)
-	{
-	    this.gold=g;
-	}
-
-	public void updateGold(double g)
-	{
-	    gold+=g;
-	}
-
-	public double Gold
-	{
-
-	    get
-		{
-		    return this.gold;
-		}
-	}
-
-	public void setEmail(string mail)
-	{
-	    this.email = mail;
-	}
-	
-	public string getEmail()
-	{
-	    return this.email;
-	}
-	
-	public bool hasHumor()
-	{
-	    return this.humor;
-	}
-
-	public void setHumor(bool humor)
-	{
-	    this.humor = humor;
-	}
 
     }
 }

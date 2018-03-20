@@ -59,8 +59,8 @@ public class Task2
 	Student king = findStudentByName(s,"John Silver");
 	if(king != null)
 	    {
-		king.setEmail("king@kong.tld");
-		king.setHumor(true);
+		king.Email = "king@kong.tld";
+		king.Humor=true;
 	    }
 
 
@@ -70,9 +70,9 @@ public class Task2
 
 	if(king != null)
 	    {
-		king.setEmail("king@kong.tld");
+		king.Email = "king@kong.tld" ;
 		Console.Write("King's gold: " + king.Gold.ToString("0.00") + " -> ");		
-		king.updateGold(king.Gold * 1000);
+		king.Gold = (king.Gold * 1000);
 		Console.WriteLine(" king's gold after adjustment: " + king.Gold.ToString("0.00"));
 	    }
 
@@ -82,7 +82,7 @@ public class Task2
     {
 	foreach(Student s in l)
 	    {
-		if(s.getFirstName() + " "+ s.getLastName() == name)
+		if(s.FullName == name)
 		    {
 			Student tmp = s;
 			return tmp;
@@ -104,9 +104,7 @@ public class Task2
     {
 	foreach(Student s in l)
 	    {
-		Console.WriteLine(s.getFirstName() + 
-				  " " +
-				  s.getLastName() + 
+		Console.WriteLine(s.FullName +
 				  " has " +
 				  s.Gold.ToString("0.00") + 
 				  " gold pieces.");
