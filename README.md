@@ -1,4 +1,8 @@
 # informationen zur Abgabe 
+	Der Task wurde rechtzeitig gepushed. Es wurde bei diesem commit nur noch die 
+getter / setter methoden (aus task1) noch entfernt. Ein feld (verlangt fuer das
+task) war mit "Gold" bereits drinnen vor dem abgabetermin!
+
   * Zu **T2.1** -> **eigene branch** Task2 mit eigenem Folder Task2
   * Zu **T2.2** -> Datei 'tasks/Task2/students.cs' hat **2 Konstruktoren**
   * Zu **T2.2** -> **Student hat 2 Public properties**, string email und public humor mit jeweils einee public set/get Methode
