@@ -27,6 +27,6 @@ clean:
 run: clean all
 	@echo "Main program turn on"
 	[ -f ./nunit.framework.dll ] || ln -s ./external/NUnit.3.10.1/lib/net45/nunit.framework.dll
-	@mono $(NUNIT) $(STUDENTS) -noresult 
+	@mono $(NUNIT) $(STUDENTS)
 
 .PHONY: clean 
