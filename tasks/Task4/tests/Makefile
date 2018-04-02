@@ -12,21 +12,21 @@
 #         Author:  Ovidiu - Dan Bogat [ic17b501], ic17b501@technikum-wien.at
 # =====================================================================================
 
-STUDENTS=StudentTest.dll
+BIN=UnitTests.dll
 SOURCES=testcases.cs ../*.cs
 MONO_PATH="./external/NUnit.ConsoleRunner.3.8.0/tools:./external/NUnit.3.10.1/lib"
 NUNIT=./external/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe
 MONO_GAC_PREFIX=~/.monogac
 
 all: $(SOURCES)
-	@mcs $(SOURCES) -target:library -r:./external/NUnit.3.10.1/lib/net45/nunit.framework.dll -out:$(STUDENTS)
+	@mcs $(SOURCES) -target:library -r:./external/NUnit.3.10.1/lib/net45/nunit.framework.dll -out:$(BIN)
 
 clean:
-	@-rm -rf $(BIN) ./vendor && echo "Folder cleansed!"
+	@-rm -rf $(BIN) *.xml ./vendor && echo "Folder cleansed!"
 
 run: clean all
 	@echo "Main program turn on"
 	[ -f ./nunit.framework.dll ] || ln -s ./external/NUnit.3.10.1/lib/net45/nunit.framework.dll
-	@mono $(NUNIT) $(STUDENTS)
+	@mono $(NUNIT) $(BIN)
 
 .PHONY: clean 

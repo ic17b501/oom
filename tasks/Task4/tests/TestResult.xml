@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="17" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-04-02 13:02:01Z" end-time="2018-04-02 13:02:02Z" duration="1.062156">
-  <command-line><![CDATA[/home/ovi/code/oom/tasks/Task4/tests/external/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe StudentTest.dll]]></command-line>
-  <test-suite type="Assembly" id="0-1006" name="StudentTest.dll" fullname="/home/ovi/code/oom/tasks/Task4/tests/StudentTest.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.123541" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="17" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-04-02 13:04:30Z" end-time="2018-04-02 13:04:31Z" duration="1.060899">
+  <command-line><![CDATA[/home/ovi/code/oom/tasks/Task4/tests/external/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe UnitTests.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1006" name="UnitTests.dll" fullname="/home/ovi/code/oom/tasks/Task4/tests/UnitTests.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.120676" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
     <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Unix 4.14.0.3" platform="Unix" cwd="/home/ovi/code/oom/tasks/Task4/tests" machine-name="kali" user="ovi" user-domain="kali" culture="en-US" uiculture="en-US" os-architecture="x86" />
     <settings>
       <setting name="DisposeRunners" value="True" />
@@ -12,23 +12,23 @@
       <setting name="NumberOfTestWorkers" value="2" />
     </settings>
     <properties>
-      <property name="_PID" value="13105" />
+      <property name="_PID" value="13355" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
-    <test-suite type="TestSuite" id="0-1007" name="NUnit" fullname="NUnit" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.108851" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
-      <test-suite type="TestSuite" id="0-1008" name="Tests" fullname="NUnit.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.107846" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
-        <test-suite type="TestFixture" id="0-1000" name="Tests" fullname="NUnit.Tests.Tests" classname="NUnit.Tests.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.102985" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
-          <test-case id="0-1003" name="Assistants1" fullname="NUnit.Tests.Tests.Assistants1" methodname="Assistants1" classname="NUnit.Tests.Tests" runstate="Runnable" seed="1466519214" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.032241" asserts="1">
+    <test-suite type="TestSuite" id="0-1007" name="NUnit" fullname="NUnit" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.105211" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
+      <test-suite type="TestSuite" id="0-1008" name="Tests" fullname="NUnit.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.104054" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
+        <test-suite type="TestFixture" id="0-1000" name="Tests" fullname="NUnit.Tests.Tests" classname="NUnit.Tests.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.099675" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
+          <test-case id="0-1003" name="Assistants1" fullname="NUnit.Tests.Tests.Assistants1" methodname="Assistants1" classname="NUnit.Tests.Tests" runstate="Runnable" seed="612935931" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.032183" asserts="1">
             <output><![CDATA[Empty student created
 ]]></output>
           </test-case>
-          <test-case id="0-1004" name="Assitants2" fullname="NUnit.Tests.Tests.Assitants2" methodname="Assitants2" classname="NUnit.Tests.Tests" runstate="Runnable" seed="1132377612" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.003081" asserts="5" />
-          <test-case id="0-1005" name="Assitants3" fullname="NUnit.Tests.Tests.Assitants3" methodname="Assitants3" classname="NUnit.Tests.Tests" runstate="Runnable" seed="2100064188" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.013612" asserts="6" />
-          <test-case id="0-1001" name="Students1" fullname="NUnit.Tests.Tests.Students1" methodname="Students1" classname="NUnit.Tests.Tests" runstate="Runnable" seed="452958111" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.006423" asserts="4">
+          <test-case id="0-1004" name="Assitants2" fullname="NUnit.Tests.Tests.Assitants2" methodname="Assitants2" classname="NUnit.Tests.Tests" runstate="Runnable" seed="1825230172" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.003120" asserts="5" />
+          <test-case id="0-1005" name="Assitants3" fullname="NUnit.Tests.Tests.Assitants3" methodname="Assitants3" classname="NUnit.Tests.Tests" runstate="Runnable" seed="1169417332" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.018485" asserts="6" />
+          <test-case id="0-1001" name="Students1" fullname="NUnit.Tests.Tests.Students1" methodname="Students1" classname="NUnit.Tests.Tests" runstate="Runnable" seed="934705705" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.007644" asserts="4">
             <output><![CDATA[Empty student created
 ]]></output>
           </test-case>
-          <test-case id="0-1002" name="Students2" fullname="NUnit.Tests.Tests.Students2" methodname="Students2" classname="NUnit.Tests.Tests" runstate="Runnable" seed="741894632" result="Passed" start-time="2018-04-02 13:02:02Z" end-time="2018-04-02 13:02:02Z" duration="0.001578" asserts="1" />
+          <test-case id="0-1002" name="Students2" fullname="NUnit.Tests.Tests.Students2" methodname="Students2" classname="NUnit.Tests.Tests" runstate="Runnable" seed="1510521490" result="Passed" start-time="2018-04-02 13:04:31Z" end-time="2018-04-02 13:04:31Z" duration="0.001043" asserts="1" />
         </test-suite>
       </test-suite>
     </test-suite>

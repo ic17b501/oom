@@ -29,7 +29,7 @@ nuget: *.config
 tests: nuget
 	$(MAKE) run -C tests
 
-run: clean all
+run: clean tests all
 	@echo "Main program turn on"
 	@eval echo -$$___{1..20} | tr -d ' '
 	@mono $(BIN)
