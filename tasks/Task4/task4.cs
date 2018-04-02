@@ -17,45 +17,65 @@
  */
 
 using System;
+using System.IO;
 using System.Collections.Generic;
 using Students;
+using Newtonsoft.Json;
 
 public class Task2
 {
     public static void Main(string[] args)
     {
-	Random rnd = new Random();
+	string dataFile = @"/tmp/task4_data.json";
 	//	Student[] s = new Student[6];
 	List<Student> s = new List<Student>();
-	string[,] names = new String[6,2]; // index1 firstName, index2 lastName
-	names[0,0] = "John"; names[0,1] = "Silver";
-	names[1,0] = "Bart"; names[1,1] = "Simpson";
-	names[2,0] = "Harry"; names[2,1] = "Potter";
-	names[3,0] = "Donald"; names[3,1] = "Duck";
-	names[4,0] = "Marcel"; names[4,1] = "Hirscher";
 
-	s.Add(new Student("Billy",
-			  "Bones",
-			  "x"+rnd.Next(0, 1000000).ToString("D7"),
-			  "x"+rnd.Next(0, 1000000).ToString("D7"),
-			  Math.Round(rnd.NextDouble()*100,2)
-			  )
-	      );
+	if ( File.Exists(dataFile) == false)
+	    {
+		Random rnd = new Random();
+		string[,] names = new String[6,2]; // index1 firstName, index2 lastName
+		names[0,0] = "John"; names[0,1] = "Silver";
+		names[1,0] = "Bart"; names[1,1] = "Simpson";
+		names[2,0] = "Harry"; names[2,1] = "Potter";
+		names[3,0] = "Donald"; names[3,1] = "Duck";
+		names[4,0] = "Marcel"; names[4,1] = "Hirscher";
+
+		s.Add(new Student("Billy",
+				  "Bones",
+				  "x"+rnd.Next(0, 1000000).ToString("D7"),
+				  "x"+rnd.Next(0, 1000000).ToString("D7"),
+				  Math.Round(rnd.NextDouble()*100,2)
+				  )
+		      );
 
 	
 
-	for(int i=1;i<6;++i)
-	    {
-		s.Add(new Student(names[i-1,0],
-				  names[i-1,1],
-				  "x"+rnd.Next(0, 1000000).ToString("D7"),
-				  "x"+rnd.Next(0, 1000000).ToString("D7"),
-				  Math.Round(rnd.NextDouble()*100,2),
-				  rnd.Next(100) <= 20 ? true : false
-				  )
-		      );
-	    }
+		for(int i=1;i<6;++i)
+		    {
+			s.Add(new Student(names[i-1,0],
+					  names[i-1,1],
+					  "x"+rnd.Next(0, 1000000).ToString("D7"),
+					  "x"+rnd.Next(0, 1000000).ToString("D7"),
+					  Math.Round(rnd.NextDouble()*100,2),
+					  rnd.Next(100) <= 20 ? true : false
+					  )
+			      );
+		    }
 
+		string json = JsonConvert.SerializeObject(s, Formatting.Indented);
+		Console.WriteLine("Serialized List" + json);
+		System.IO.File.WriteAllText(dataFile, json);
+		Console.WriteLine("Written serialized list to " +dataFile);
+		
+	    }else{
+	    string json = System.IO.File.ReadAllText(dataFile);
+	    Console.WriteLine("Deserialized List as read from file " + dataFile + "\n" + json);
+	    s = JsonConvert.DeserializeObject<List<Student>>(json);
+	    Console.WriteLine("s has now " + s.Count + " items");
+	    Console.WriteLine("Listing collection via defined method Print for every item after deserialization:");
+	    listStudents(s);
+	}
+	
 	Student king = findStudentByName(s,"John Silver");
 	if(king != null)
 	    {
@@ -64,9 +84,10 @@ public class Task2
 	    }
 
 
-	listStudents(s);
-	Console.WriteLine("");
-	listGold(s);
+   
+	//listStudents(s);
+	//Console.WriteLine("");
+	//listGold(s);
 
 	if(king != null)
 	    {

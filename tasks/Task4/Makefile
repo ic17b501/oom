@@ -14,10 +14,11 @@
 
 BIN=task4
 SOURCES=students.cs task4.cs
-TESTS=tests
+MONO_PATH="./external/NUnit.ConsoleRunner.3.8.0/tools:./external/NUnit.3.10.1/lib"
 
 all: nuget $(SOURCES)
-	@mcs -out:$(BIN) $(SOURCES) && echo "Sauce compiled!"
+	[ -f Newtonsoft.Json.dll ] || ln -s external/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll
+	@mcs -out:$(BIN) $(SOURCES) -r:external/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll && echo "Sauce compiled!"
 
 clean:
 	@-rm -rf $(BIN) ./vendor && echo "Folder cleansed!"
@@ -31,7 +32,7 @@ tests: nuget
 
 run: clean tests all
 	@echo "Main program turn on"
-	@eval echo -$$___{1..20} | tr -d ' '
+#	@eval echo -$$___{1..20} | tr -d ' '
 	@mono $(BIN)
 
 .PHONY: clean 

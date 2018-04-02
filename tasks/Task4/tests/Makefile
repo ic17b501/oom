@@ -19,7 +19,7 @@ NUNIT=./external/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe
 MONO_GAC_PREFIX=~/.monogac
 
 all: $(SOURCES)
-	@mcs $(SOURCES) -target:library -r:./external/NUnit.3.10.1/lib/net45/nunit.framework.dll -out:$(BIN)
+	@mcs $(SOURCES) -target:library -r:./external/NUnit.3.10.1/lib/net45/nunit.framework.dll,./external/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll -out:$(BIN)
 
 clean:
 	@-rm -rf $(BIN) *.xml ./vendor && echo "Folder cleansed!"
@@ -27,6 +27,7 @@ clean:
 run: clean all
 	@echo "Main program turn on"
 	[ -f ./nunit.framework.dll ] || ln -s ./external/NUnit.3.10.1/lib/net45/nunit.framework.dll
+	[ -f ./Newtonsoft.Json.dll ] || ln -s ./external/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll
 	@mono $(NUNIT) $(BIN)
 
 .PHONY: clean 

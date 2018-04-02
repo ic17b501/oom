@@ -3,24 +3,14 @@
 
 =======
 # informationen zur Abgabe 
-	Der Task wurde rechtzeitig gepushed. Es wurde bei diesem commit nur noch die 
-getter / setter methoden (aus task1) noch entfernt. Ein feld (verlangt fuer das
-task) war mit "Gold" bereits drinnen vor dem abgabetermin!
+  * Es wurde fuer die Tests (condition-constraints von NUnit) eine Abstracte Methode declariert, welche eine NotSupportedException wirft, rein fuer diese Uebung. (Methode Student:DoNothing());
+  * Die Klasse Assistant erbt nun von Student wie vorgesehen (bei der vorherigen Uebeung mussten 2 Separate Klassen das Interface implementieren. Daher wurde diese damals anders geschrieben.
+  * Nach dem Deserializieren der Objekte in einer Liste werden diese iteriert, und fuer jedes Objekt dessen Methode print() aufgerufen.  
 
-  * Zu **T2.1** -> **eigene branch** Task2 mit eigenem Folder Task2
-  * Zu **T2.2** -> Datei 'tasks/Task2/students.cs' hat **2 Konstruktoren**
-  * Zu **T2.2** -> **Student hat 2 Public properties**, string email und public humor mit jeweils einee public set/get Methode
-  * Zu **T2.2** -> **Student.'gold' ist ein private field** mit der public getter metoder fuer 'Gold', public updateGold und private setGold
-  * Zu **T2.3** -> **task2.cs instatiier 6 unterschiedliche Objecte** von Student und ladet diese in eine Liste List<Student> s;
-  * Zu **T2.3** -> **listStudents(List<Student>)** iteriert ueber alle Elemente der Liste s, und fuehrt fuer jedes Objekt die **Methode print()** aus. Die instantiierung wird absichtlich auf unterschiedliche Weisen vorgenommen.
-  * Zu **T2.3** -> die Methode **public print() gibt ausgewaehlte fields und properties** des objektes aus mittels **Console.WriteLine()**
-  * Zu **T2.3** -> die Methode **findStudentByName(List<Student>, String)** aus task2.cs findet ein bestimtes Objekt aus der Liste, bei dem gefundenen Objekt werden **setter / getter Methoden** aufgerufen um fields auszulesen, bzw. eines zu aktualisieren,(updateGold). **Das betroffene field des Objektes wird vorher und nachher aufgerufen**.
+  * Zu **T4.1** -> **nuget und json** werden ueber nuget.config und packages.config abgehandelt und in external geladen
+  * Zu **T4.2** -> **tasks/Task4/tests/testcases.cs** enthaelt einige Tests. Assertrs wurden mit mehr als 8 unterschiedlichen **condition-constraints** erstellt. Es gibt jedoch nur 5 Test-Cases da die Funktionalitaet der Classen recht eingeschreankt ist, und es so gesehen *wenig* zum Testen gibt.
+  * Zu **T4.3** -> **/tmp/task4_data.json** enthaelt den JSON String. Es wird nach der Datei gescuht und nur geprueft ob diese vorhanden ist. Falls ja, so werden alle Objecte in eine Liste List<Student> geladen. Falls nicht, so werden die Objekte erstellt, und anschlieszend serializiert und in diese Datei geschrieben. Bei jedem Vorgang wird der JSON String bzw. der Inhalt der Datei ausgegeben.
 
-
-Die meisten Werte fuer die Objekte werden zufaellig generiert.
-
-Dem Constructor fuer Student wurden default parameter hinzugefuegt fuer beide public properties email und humor.
->>>>>>> task3
 
 ## Objektorientierte Methoden (OOM)
   Object-Oriented Design (OOD) and Programming (OOP)
