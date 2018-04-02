@@ -13,7 +13,7 @@
 # =====================================================================================
 
 STUDENTS=StudentTest.dll
-SOURCES=students_ut.cs ../*.cs
+SOURCES=testcases.cs ../*.cs
 MONO_PATH="./external/NUnit.ConsoleRunner.3.8.0/tools:./external/NUnit.3.10.1/lib"
 NUNIT=./external/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe
 MONO_GAC_PREFIX=~/.monogac
