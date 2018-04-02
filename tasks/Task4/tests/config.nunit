@@ -1,0 +1,6 @@
+<NUnitProject>
+  <Settings activeconfig="UnitTests"/>
+  <Config name="UnitTests">
+	<assembly runtimeFramework="./external/NUnit.3.10.1/lib/net45/nunit.framework.dll" />
+  </Config>
+</NUnitProject>
