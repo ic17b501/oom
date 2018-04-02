@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="17" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-04-02 12:58:05Z" end-time="2018-04-02 12:58:06Z" duration="1.040143">
+  <command-line><![CDATA[/home/ovi/code/oom/tasks/Task4/tests/external/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe StudentTest.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1006" name="StudentTest.dll" fullname="/home/ovi/code/oom/tasks/Task4/tests/StudentTest.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.121418" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Unix 4.14.0.3" platform="Unix" cwd="/home/ovi/code/oom/tasks/Task4/tests" machine-name="kali" user="ovi" user-domain="kali" culture="en-US" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="/home/ovi/code/oom/tasks/Task4/tests" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="_PID" value="12966" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1007" name="NUnit" fullname="NUnit" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.106824" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
+      <test-suite type="TestSuite" id="0-1008" name="Tests" fullname="NUnit.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.105774" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
+        <test-suite type="TestFixture" id="0-1000" name="Tests" fullname="NUnit.Tests.Tests" classname="NUnit.Tests.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.096350" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="17">
+          <test-case id="0-1003" name="Assistants1" fullname="NUnit.Tests.Tests.Assistants1" methodname="Assistants1" classname="NUnit.Tests.Tests" runstate="Runnable" seed="2034594844" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.031819" asserts="1">
+            <output><![CDATA[Empty student created
+]]></output>
+          </test-case>
+          <test-case id="0-1004" name="Assitants2" fullname="NUnit.Tests.Tests.Assitants2" methodname="Assitants2" classname="NUnit.Tests.Tests" runstate="Runnable" seed="362070831" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.003161" asserts="5" />
+          <test-case id="0-1005" name="Assitants3" fullname="NUnit.Tests.Tests.Assitants3" methodname="Assitants3" classname="NUnit.Tests.Tests" runstate="Runnable" seed="842140034" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.022552" asserts="6" />
+          <test-case id="0-1001" name="Students1" fullname="NUnit.Tests.Tests.Students1" methodname="Students1" classname="NUnit.Tests.Tests" runstate="Runnable" seed="97421854" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.005116" asserts="4">
+            <output><![CDATA[Empty student created
+]]></output>
+          </test-case>
+          <test-case id="0-1002" name="Students2" fullname="NUnit.Tests.Tests.Students2" methodname="Students2" classname="NUnit.Tests.Tests" runstate="Runnable" seed="644950745" result="Passed" start-time="2018-04-02 12:58:06Z" end-time="2018-04-02 12:58:06Z" duration="0.000924" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
