@@ -18,6 +18,8 @@ MONO_PATH="./external/NUnit.ConsoleRunner.3.8.0/tools:./external/NUnit.3.10.1/li
 
 all: nuget $(SOURCES)
 	[ -f Newtonsoft.Json.dll ] || ln -s external/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll
+	[ -f System.Reactive.Core.dll ] || ln -s external/System.Reactive.Core.3.1.1/lib/netstandard1.3/System.Reactive.Core.dll
+	[ -f System.Reactive.Linq.dll ] || ln -s external/System.Reactive.Linq.3.1.1/lib/netstandard1.3/System.Reactive.Linq.dll
 	@mcs -out:$(BIN) $(SOURCES) -r:external/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll && echo "Sauce compiled!"
 
 clean:

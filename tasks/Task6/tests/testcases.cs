@@ -1,3 +1,6 @@
+using System.Reactive;
+using System.Reactive.Linq;
+
 namespace NUnit.Tests
 {
     using System;
